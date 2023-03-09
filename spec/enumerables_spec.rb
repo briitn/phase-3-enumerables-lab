@@ -23,11 +23,12 @@ end
 describe '#print_spicy_foods' do
   
   it 'outputs the spicy foods to the terminal in the specified format' do
-    output_str = "Green Curry (Thai) | Heat Level: 🌶🌶🌶🌶🌶🌶🌶🌶🌶\nBuffalo Wings (American) | Heat Level: 🌶🌶🌶\nMapo Tofu (Sichuan) | Heat Level: 🌶🌶🌶🌶🌶🌶\n"
+    output_str = "Green Curry (Thai) | Heat Level: 🌶 🌶 🌶 🌶 🌶 🌶 🌶 🌶 🌶\nBuffalo Wings (American) | Heat Level: 🌶 🌶 🌶\nMapo Tofu (Sichuan) | Heat Level: 🌶 🌶 🌶 🌶 🌶 🌶\n"
     expect { print_spicy_foods(spicy_foods) }.to output(output_str).to_stdout
   end
   
 end
+
 
 describe '#get_spicy_food_by_cuisine' do
   
@@ -37,7 +38,6 @@ describe '#get_spicy_food_by_cuisine' do
   end
 
 end
-
 describe '#sort_by_heat' do
   
   it 'return an array of hashes sorted by heat level from lowest to highest' do
@@ -54,7 +54,7 @@ end
 describe '#print_spiciest_foods' do
   
   it 'outputs ONLY the spicy foods that have a heat level greater than 5 to the terminal in the specified format' do
-    output_str = "Green Curry (Thai) | Heat Level: 🌶🌶🌶🌶🌶🌶🌶🌶🌶\nMapo Tofu (Sichuan) | Heat Level: 🌶🌶🌶🌶🌶🌶\n"
+    output_str = "Green Curry (Thai) | Heat Level: 🌶 🌶 🌶 🌶 🌶 🌶 🌶 🌶 🌶\nMapo Tofu (Sichuan) | Heat Level: 🌶 🌶 🌶 🌶 🌶 🌶\n"
     expect { print_spiciest_foods(spicy_foods) }.to output(output_str).to_stdout
   end
   
